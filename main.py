@@ -15,18 +15,24 @@ while gameStart:
         elif player_choice == "R":
             if computer_choice == "S":
                 print("Rock smashes scissors! You win!")
+                gameStart = False
             else:
                 print("Paper covers rock! You lose.")
+                gameStart = False
         elif player_choice == "P":
             if computer_choice == "R":
                 print("Paper covers rock! You win!")
+                gameStart = False
             else:
                 print("Scissors cuts paper! You lose.")
+                gameStart = False
         elif player_choice == "S":
             if computer_choice == "P":
+                gameStart = False
                 print("Scissors cuts paper! You win!")
             else:
                 print("Rock smashes scissors! You lose.")
+                gameStart = False
     else:
         print("Wrong selection, make sure you type R, S, P. Try again")
 
